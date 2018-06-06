@@ -9,7 +9,7 @@ kubectl cluster-info
 
 ## Configure the Cluster
 
-kubectl apply -f ~/JasonMorgan/infra-cluster/namespaces
+kubectl apply -f ~/JasonMorgan/infra-cluster/namespace
 
 kubens planespotter
 
@@ -39,11 +39,23 @@ kubectl rollout history deployment/planespotter-frontend
 
 docker build -t jasonmorgan/planespotter-frontend:2.0.0 ~/docker-images/planespotter-frontend/
 
-docker images
+clear
+
+docker images 
+
+clear
+
+docker images | grep planespotter-frontend
+
+clear
 
 ### Publish the image
 
 docker push jasonmorgan/planespotter-frontend:2.0.0
+
+#### cleanup
+
+docker rmi jasonmorgan/planespotter-frontend:2.0.0
 
 ### Pull down the image
 
