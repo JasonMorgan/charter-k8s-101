@@ -18,3 +18,5 @@
 * [kubectl cheat sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 * [Kubernetes Discussions](https://discuss.kubernetes.io)
 * [kubectl autocomplete](https://kubernetes.io/docs/tasks/tools/install-kubectl/#enabling-shell-autocompletion)
+* [Concourse](https://concourse-ci.org/)
+* [flyway database versioning tool](https://flywaydb.org/)
